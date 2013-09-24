@@ -1,0 +1,56 @@
+/*
+Syntax error: File to import not found or unreadable: twitter/bootstrap.
+              Load paths:
+                /home/ubuntu/Projects/web/Timeboard-web/app/assets/stylesheets
+                /home/ubuntu/Projects/web/Timeboard-web/app/assets/stylesheets
+        on line 1 of /home/ubuntu/Projects/web/Timeboard-web/app/assets/stylesheets/custom.css.scss
+
+1: @import "twitter/bootstrap";
+2: 
+3: $grayMediumLight: #eaeaea;
+4: 
+5: @mixin box_sizing {
+6:   -moz-box-sizing: border-box;
+
+Backtrace:
+/home/ubuntu/Projects/web/Timeboard-web/app/assets/stylesheets/custom.css.scss:1
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/import_node.rb:45:in `import'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin.rb:81:in `update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:435:in `watch_or_update'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:318:in `process_result'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:41:in `parse'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:21:in `parse!'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/bin/sass:9:in `<top (required)>'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `load'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `<main>'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `eval'
+/home/ubuntu/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: twitter/bootstrap.\A               Load paths:\A                 /home/ubuntu/Projects/web/Timeboard-web/app/assets/stylesheets\A                 /home/ubuntu/Projects/web/Timeboard-web/app/assets/stylesheets\A         on line 1 of /home/ubuntu/Projects/web/Timeboard-web/app/assets/stylesheets/custom.css.scss\A \A 1: @import \"twitter/bootstrap\";\A 2: \A 3: $grayMediumLight: #eaeaea;\A 4: \A 5: @mixin box_sizing {\A 6:   -moz-box-sizing: border-box;"; }
