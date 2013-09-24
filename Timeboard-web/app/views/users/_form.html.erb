@@ -28,16 +28,16 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
+    <%= f.label :nick_name %><br>
+    <%= f.text_field :nick_name %>
+  </div>
+  <div class="field">
     <%= f.label :gender %><br>
     <%= f.text_field :gender %>
   </div>
   <div class="field">
     <%= f.label :date_of_birth %><br>
-    <%= f.date_select :date_of_birth %>
-  </div>
-  <div class="field">
-    <%= f.label :date_joined %><br>
-    <%= f.datetime_select :date_joined %>
+    <%= f.date_select :date_of_birth,  :start_year => Time.now.year - 110, :end_year => Time.now.year %>
   </div>
   <div class="actions">
     <%= f.submit %>

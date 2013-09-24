@@ -1,0 +1,43 @@
+<h1>Listing calendar_events</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Type</th>
+      <th>Item class</th>
+      <th>Summary</th>
+      <th>Description</th>
+      <th>Url</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Repeat rule</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @calendar_events.each do |calendar_event| %>
+      <tr>
+        <td><%= calendar_event.user_id %></td>
+        <td><%= calendar_event.type %></td>
+        <td><%= calendar_event.item_class %></td>
+        <td><%= calendar_event.summary %></td>
+        <td><%= calendar_event.description %></td>
+        <td><%= calendar_event.url %></td>
+        <td><%= calendar_event.start_date %></td>
+        <td><%= calendar_event.end_date %></td>
+        <td><%= calendar_event.repeat_rule %></td>
+        <td><%= link_to 'Show', calendar_event %></td>
+        <td><%= link_to 'Edit', edit_calendar_event_path(calendar_event) %></td>
+        <td><%= link_to 'Destroy', calendar_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Calendar event', new_calendar_event_path %>

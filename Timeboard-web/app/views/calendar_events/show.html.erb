@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @calendar_event.user_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @calendar_event.type %>
+</p>
+
+<p>
+  <strong>Item class:</strong>
+  <%= @calendar_event.item_class %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @calendar_event.summary %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @calendar_event.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @calendar_event.url %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @calendar_event.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @calendar_event.end_date %>
+</p>
+
+<p>
+  <strong>Repeat rule:</strong>
+  <%= @calendar_event.repeat_rule %>
+</p>
+
+<%= link_to 'Edit', edit_calendar_event_path(@calendar_event) %> |
+<%= link_to 'Back', calendar_events_path %>

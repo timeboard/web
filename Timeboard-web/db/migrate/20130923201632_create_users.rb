@@ -9,7 +9,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :gender
       t.date :date_of_birth
       t.datetime :date_joined
-      t.string :profile_photo_url
+      t.text :profile_photo_url
 
       t.timestamps
     end
