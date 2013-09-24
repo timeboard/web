@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-TimeboardWeb::Application.config.secret_key_base = '7e6cae9cf7ca271abf7f544d19f12faf3ad4c82454fe48e60a544b4fcb8d6ff846bdde813b7c6c762ef9b277b4adcb7f3542906e46b0a4316a84379575ec5b1b'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+SampleApp::Application.config.secret_key_base = secure_token
+
