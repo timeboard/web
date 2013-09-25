@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/anjlab/bootstrap-rails.git
-  revision: 3070835a95975c0d2417094825633bcb763f0182
+  revision: 583659441aa843e47f8002c562c2911500b2fd3e
   specs:
     anjlab-bootstrap-rails (3.0.0.3)
       railties (>= 3.0)
@@ -35,7 +35,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
-    bootstrap-sass (2.3.2.0)
+    bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
@@ -63,7 +63,6 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.0)
-    mysql2 (0.3.11-x86-mingw32)
     mysql2 (0.3.13)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -141,6 +140,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   rails (= 4.0.0)
+  rake (= 10.1.0)
   rspec-rails (= 2.13.1)
   sass-rails (~> 4.0.0)
   sdoc
