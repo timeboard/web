@@ -21,3 +21,10 @@
 # Ignore temp file
 *~
 .elasticbeanstalk/
+
+#ignore unneeded files
+*.swp
+.project
+.idea
+.secret
+.DS_Store
