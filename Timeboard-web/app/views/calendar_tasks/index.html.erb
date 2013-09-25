@@ -1,0 +1,43 @@
+<h1>Listing calendar_tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Type</th>
+      <th>Item class</th>
+      <th>Summary</th>
+      <th>Description</th>
+      <th>Url</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Repeat rule</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @calendar_tasks.each do |calendar_task| %>
+      <tr>
+        <td><%= calendar_task.user_id %></td>
+        <td><%= calendar_task.type %></td>
+        <td><%= calendar_task.item_class %></td>
+        <td><%= calendar_task.summary %></td>
+        <td><%= calendar_task.description %></td>
+        <td><%= calendar_task.url %></td>
+        <td><%= calendar_task.start_date %></td>
+        <td><%= calendar_task.end_date %></td>
+        <td><%= calendar_task.repeat_rule %></td>
+        <td><%= link_to 'Show', calendar_task %></td>
+        <td><%= link_to 'Edit', edit_calendar_task_path(calendar_task) %></td>
+        <td><%= link_to 'Destroy', calendar_task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Calendar task', new_calendar_task_path %>

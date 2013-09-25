@@ -1,0 +1,2 @@
+class CalendarTask < CalendarItem
+end

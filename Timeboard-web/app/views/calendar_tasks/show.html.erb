@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @calendar_task.user_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @calendar_task.type %>
+</p>
+
+<p>
+  <strong>Item class:</strong>
+  <%= @calendar_task.item_class %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @calendar_task.summary %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @calendar_task.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @calendar_task.url %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @calendar_task.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @calendar_task.end_date %>
+</p>
+
+<p>
+  <strong>Repeat rule:</strong>
+  <%= @calendar_task.repeat_rule %>
+</p>
+
+<%= link_to 'Edit', edit_calendar_task_path(@calendar_task) %> |
+<%= link_to 'Back', calendar_tasks_path %>
