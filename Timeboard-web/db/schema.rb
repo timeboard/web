@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20130924214722) do
     t.string   "gender"
     t.date     "date_of_birth"
     t.datetime "date_joined"
-    t.text     "profile_photo_url"
+    t.string   "profile_photo_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
