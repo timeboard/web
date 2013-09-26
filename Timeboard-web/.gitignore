@@ -28,3 +28,4 @@
 .idea
 .secret
 .DS_Store
+/Gemfile.lock
