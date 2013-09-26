@@ -11,36 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130924214722) do
-
-  create_table "calendar_items", force: true do |t|
-    t.integer  "user_id",     null: false
-    t.string   "type",        null: false
-    t.string   "item_class",  null: false
-    t.string   "summary",     null: false
-    t.text     "description"
-    t.text     "url"
-    t.date     "start_date"
-    t.date     "end_date"
-    t.string   "repeat_rule"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.string   "email",             null: false
-    t.string   "password",          null: false
-    t.string   "first_name",        null: false
-    t.string   "last_name",         null: false
-    t.string   "nick_name"
-    t.string   "gender"
-    t.date     "date_of_birth"
-    t.datetime "date_joined"
-    t.string   "profile_photo_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+ActiveRecord::Schema.define(version: 0) do
 
 end
