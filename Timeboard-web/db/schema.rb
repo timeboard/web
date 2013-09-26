@@ -27,6 +27,16 @@ ActiveRecord::Schema.define(version: 20130926081244) do
     t.datetime "updated_at"
   end
 
+  create_table "user_connections", force: true do |t|
+    t.integer  "user_id",        null: false
+    t.integer  "friend_user_id", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "user_connections", ["friend_user_id"], name: "index_user_connections_on_friend_user_id", using: :btree
+  add_index "user_connections", ["user_id"], name: "index_user_connections_on_user_id", using: :btree
+
   create_table "users", force: true do |t|
     t.string   "email",             null: false
     t.string   "password_digest",   null: false
@@ -41,6 +51,6 @@ ActiveRecord::Schema.define(version: 20130926081244) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
 end

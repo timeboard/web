@@ -7,7 +7,7 @@
 
 <p>
   <strong>Password:</strong>
-  <%= @user.password %>
+  <%= @user.password_digest %>
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 
 <p>
   <strong>Date joined:</strong>
-  <%= @user.date_joined %>
+  <%= @user.created_at.to_date %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
