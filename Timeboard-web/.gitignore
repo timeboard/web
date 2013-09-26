@@ -18,3 +18,13 @@
 # Ignore database config.
 /config/database.yml
 
+# Ignore temp file
+*~
+.elasticbeanstalk/
+
+#ignore unneeded files
+*.swp
+.project
+.idea
+.secret
+.DS_Store
