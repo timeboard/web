@@ -1,4 +1,6 @@
 TimeboardWeb::Application.routes.draw do
+  resources :user_connections
+
   resources :calendar_tasks
 
   resources :calendar_events
