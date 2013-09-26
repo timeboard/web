@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
+
+gem 'bcrypt-ruby', '3.0.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -51,6 +54,9 @@ end
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
   gem 'mysql2'
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', '2.1.0'
+  gem 'guard-rspec', '2.5.0'
 end
 
 gem 'mysql2'

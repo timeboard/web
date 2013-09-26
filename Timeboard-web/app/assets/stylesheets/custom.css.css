@@ -1,58 +1,18 @@
-/* universal */
-html {
-  overflow-y: scroll; }
-
-body {
-  padding-top: 60px; }
-
-section {
-  overflow: auto; }
-
-textarea {
-  resize: vertical; }
-
-.center {
-  text-align: center; }
-
-.center h1 {
-  margin-bottom: 10px; }
-
-/* typography */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1; }
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center; }
-
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #999; }
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em; }
-
 /* header */
 #logo {
   float: left;
-  margin-right: 10px;
+  margin-right: 2%;
   font-size: 1.7em;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 1%;
   font-weight: bold;
   line-height: 1; }
 
 #logo:hover {
-  color: #fff;
+  background-color: inherit;
+  color: #000;
   text-decoration: none; }
 
 /* footer */
@@ -87,40 +47,6 @@ footer ul li {
   -moz-box-sizing: border-box;
   -webkit-box-sizeing: border-box;
   box-sizeing: border-box; }
-
-/* sidebar */
-aside section {
-  padding: 10px 0;
-  border-top: 1px solid; }
-  aside section:first-child {
-    border: 0;
-    padding-top: 0; }
-  aside section span {
-    display: block;
-    margin-bottom: 3px;
-    line-height: 1; }
-  aside section h1 {
-    font-size: 1.4em;
-    text-align: left;
-    letter-spacing: -1px;
-    margin-bottom: 3px;
-    margin-top: 0px; }
-
-.gravatar {
-  float: left;
-  margin-right: 10px; }
-
-/* forms */
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizeing: border-box;
-  box-sizeing: border-box; }
-
-input {
-  height: auto !important; }
 
 #error_explanation {
   color: #f00; }

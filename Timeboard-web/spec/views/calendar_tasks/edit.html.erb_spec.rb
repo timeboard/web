@@ -4,7 +4,6 @@ describe "calendar_tasks/edit" do
   before(:each) do
     @calendar_task = assign(:calendar_task, stub_model(CalendarTask,
       :user_id => 1,
-      :type => "",
       :item_class => "MyString",
       :summary => "MyString",
       :description => "MyText",
@@ -19,7 +18,6 @@ describe "calendar_tasks/edit" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", calendar_task_path(@calendar_task), "post" do
       assert_select "input#calendar_task_user_id[name=?]", "calendar_task[user_id]"
-      assert_select "input#calendar_task_type[name=?]", "calendar_task[type]"
       assert_select "input#calendar_task_item_class[name=?]", "calendar_task[item_class]"
       assert_select "input#calendar_task_summary[name=?]", "calendar_task[summary]"
       assert_select "textarea#calendar_task_description[name=?]", "calendar_task[description]"
