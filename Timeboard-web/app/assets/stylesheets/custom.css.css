@@ -82,3 +82,14 @@ footer ul li {
   #error_explanation ul {
     list-style: none;
     margin: 0 0 18px 0; }
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizeing: border-box;
+  box-sizeing: border-box; }
+
+input {
+  height: auto !important; }
