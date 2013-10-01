@@ -81,6 +81,16 @@ describe User do
     it { should_not be_valid }
   end
 
+  describe "again when email address is already taken" do
+    before do
+      same_email = @user.dup
+      same_email.email = @user.email.upcase
+      same_email.save
+    end
+
+    it { should_not be_valid }
+  end
+
 
 
 

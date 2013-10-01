@@ -15,7 +15,36 @@
   color: #000;
   text-decoration: none; }
 
-/* footer */
+/* sign-in */
+.signin-form {
+  position: relative;
+  padding-top: 10%; }
+
+#top {
+  height: 100%;
+  min-height: 650px;
+  width: 900px;
+  min-width: 900px; }
+
+#top .col-md-4 {
+  margin-top: 10%;
+  text-align: center; }
+
+#top .col-md-4 .checkbox {
+  text-align: left; }
+
+#top .col-md-4 .form-group .form-control {
+  margin: 5px; }
+
+.signin-option {
+  float: right; }
+
+.title-text {
+  float: left;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 150%; }
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
