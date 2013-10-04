@@ -1,8 +1,6 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-                              :github => 'anjlab/bootstrap-rails'
-
+gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
 
 gem 'bcrypt-ruby', '3.0.1'
 
