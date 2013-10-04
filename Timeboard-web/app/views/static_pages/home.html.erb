@@ -12,22 +12,21 @@
       </div>
       <br/>
       <div class="signin-form">
-	<form>
-	  <div class="form-group">
-	    <input type="text" class="form-control" placeholder="Email" />
-	  </div>
-	  <div class="form-group">
-	    <input type="password" class="form-control" placeholder="Password" />
-	  </div>
-	</form>
+        <%= form_for(:session, url: sessions_path) do |f| %>
+
+          <%= f.label :email %>
+          <%= f.text_field :email %>
+
+          <%= f.label :password %>
+          <%= f.password_field :password %>
+          <label class="checkbox">
+            <input type="checkbox"></input>
+             Remember me
+          </label>
+
+          <%= f.submit "Sign in", class: "btn btn-large btn-primary text-center pull-right" %>
+        <% end %>
       </div>
-      <label class="checkbox">
-	<input type="checkbox"></input>
-	Remember me
-      </label>
-      <button type="submit" class="btn btn-primary text-center pull-right">
-	Sign in
-      </button>
     </div>
   </div>
 </div>

@@ -1,39 +1,60 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @user.password_digest %>
-</p>
-
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <strong>Gender:</strong>
-  <%= @user.gender %>
-</p>
-
-<p>
-  <strong>Date of birth:</strong>
-  <%= @user.date_of_birth %>
-</p>
-
-<p>
-  <strong>Date joined:</strong>
-  <%= @user.created_at.to_date %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h3>
+	     <%= @user.first_name%>
+	     <%= @user.last_name%>
+      </h3>
+      <%= gravatar_for @user %>
+      <p>
+        Content
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h3>State</h3>
+      <p>
+        Content
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>events</h3>
+      <p>
+        Content
+      </p>
+      <form>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <h3>Time table</h3>
+      <p>
+        Content
+      </p>
+      <form>
+      </form>
+      <table class="table">
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table">
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <h3>Friends</h3>
+      <p>
+        Content
+      </p>
+      <form>
+      </form>
+    </div>
+  </div>
+</div>
