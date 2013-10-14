@@ -23,30 +23,13 @@
     <div class="col-md-4">
       <h3>events</h3>
       <p>
-        Content
+        <%= render "calendar_events/form" %>
       </p>
-      <form>
-      </form>
     </div>
     <div class="col-md-4">
       <h3>Time table</h3>
-      <p>
-        Content
-      </p>
-      <form>
-      </form>
-      <table class="table">
-        <tbody>
-          <tr>
-          </tr>
-        </tbody>
-      </table>
-      <table class="table">
-        <tbody>
-          <tr>
-          </tr>
-        </tbody>
-      </table>
+      <div id='calendar'></div>
+      <%= render "shared/week_table" %>
     </div>
     <div class="col-md-4">
       <h3>Friends</h3>

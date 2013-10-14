@@ -4,6 +4,8 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
 
+gem 'fullcalendar-rails'
+
 gem 'bcrypt-ruby', '3.0.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
