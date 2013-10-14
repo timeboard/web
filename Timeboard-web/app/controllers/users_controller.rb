@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @calendar_event = @user.calendar_events.build()
+    @cal_events = @user.calendar_events
   end
 
   # GET /users/new
